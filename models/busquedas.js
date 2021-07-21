@@ -7,7 +7,6 @@ class Busquedas {
     dbPath = './db/database.json';
 
     constructor() {
-
         this.leerDB();
     }
 
@@ -41,7 +40,7 @@ class Busquedas {
         }
     }
 
-// primer método que me sirve para buscar una ciudad
+// primer método que sirve para buscar una ciudad
 // método petición asíncrona
     async ciudad(lugar = '') {
 
@@ -53,7 +52,7 @@ class Busquedas {
             });
 
             const resp = await instance.get();
-            // con este llamado se imprime el objeto de javascript
+            // con este llamado se imprime el objeto de js
             return resp.data.features.map(lugar => ({
                 id:lugar.id,
                 nombre: lugar.place_name,
@@ -69,7 +68,6 @@ class Busquedas {
             return [];
         }
     }
-
 
     async climaLugar(lat, lon) {
 
@@ -130,7 +128,6 @@ class Busquedas {
         this.historial = data.historial;
 
     }
-
 
 }
 

@@ -52,8 +52,6 @@ const main = async() => {
                     const idx = `${i + 1}.`.green;
                     console.log(`${idx} ${lugar}`);
                 })
-            
-
             break;
     
         }
