@@ -29,6 +29,7 @@ const inquirerMenu = async() => {
 
     // console.clear();
     console.log('======================='.blue);
+    console.log(' Bienvenido a la App-Clima '.blue);
     console.log(' Seleccione una opción '.blue);
     console.log('=======================\n'.blue);
 
